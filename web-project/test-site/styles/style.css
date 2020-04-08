@@ -1,0 +1,52 @@
+
+html
+{
+    /*基础字号为10像素*/
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #00539F;
+}
+body
+{
+    width: 600px;
+    /*为 margin 或 padding 等属性设置两个值时，
+    第一个值代表元素的上方和下方（在这个例子中设置为 0），
+    而第二个值代表左边和右边（在这里，auto 是一个特殊的值，意思是水平方向上左右对称）。
+    你也可以使用一个，三个或四个值.*/
+    margin: 0 auto;
+    background-color: #ff9500;
+    /*值以上、右、下、左的顺序排列。*/
+    padding: 0 20px 20px 20px;
+    /*为 body 设置 5 像素的黑色实线边框*/
+    border: 5px solid black;
+}
+img
+{
+    /* <body> 元素是块级元素，意味着它占据了页面的空间并且能够赋予外边距和其他改变间距的值。
+    而图片是内联元素，不具备块级元素的一些功能。
+    所以为了使图像有外边距，我们必须使用 display: block 给予其块级行为。*/
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+}
+h1
+{
+    /*覆盖默认样式*/
+    margin: 0;
+    padding: 20px 0;
+    color: #00539F;
+    /*为元素文本提供阴影
+    第一个值设置水平偏移值 —— 即阴影右移的像素数（负值左移）。
+    第二个值设置垂直偏移值 —— 即阴影下移的像素数（负值上移）。
+    第三个值设置阴影的模糊半径 —— 值越大产生的阴影越模糊。
+    第四个值设置阴影的基色。*/
+    text-shadow: 3px 3px 1px black;
+    font-size: 60px;
+    text-align: center;
+}
+p,li 
+{
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 1px;
+}
